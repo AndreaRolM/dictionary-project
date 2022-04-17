@@ -6,11 +6,10 @@ import "./Dictionary.css";
 export default function Dictionary(props) {
   let [loaded, setLoaded] = useState(false);
   let [keyword, setKeyword] = useState(props.defaultKeyword);
-  let [results, setResaults] = useState(null);
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
-    setResaults(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function search() {
@@ -19,6 +18,7 @@ export default function Dictionary(props) {
   }
 
   function handleSubmit(event) {
+    event.preventDefault();
     search();
   }
 
