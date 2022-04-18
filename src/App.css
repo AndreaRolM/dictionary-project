@@ -1,7 +1,18 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 body {
   background: #d66781;
 }
 
-a {
-  color: #d66781;
+.footer-link {
+  color: #ffffff;
+}
+
+.App footer {
+  font-size: 10px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
